@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <meta charset="UTF-8">
+    <title>Instagram Graber Functional</title>
+</head>
+<body>
+
+<h1>Here my photos</h1>
+
+
+<div class="row">
+{% for data in insta %}
+  <div class="col-sm-4""><img src="{{ data.image_ins }}" class="img-responsive" alt="{{ data.tag_ins }}" height="350" width="350"></div>
+  <div ><snap>"{{ data.tag_ins }}"</snap></div>
+{% endfor %}
+</div>
+
+</body>
+</html>
